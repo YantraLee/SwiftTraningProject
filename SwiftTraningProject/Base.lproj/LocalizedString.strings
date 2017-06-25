@@ -1,0 +1,71 @@
+/* 
+  LocalizedString.strings
+  SwiftTraningProject
+
+  Created by 吉祥具 on 2017/5/20.
+  Copyright © 2017年 吉祥具. All rights reserved.
+*/
+
+//tab文字
+"Marvel_Tab"="漫威";
+"Youtube_Tab"="Youtube";
+
+"Marvel_Button"="漫威按鈕";
+"Youtube_Button"="Youtube按鈕";
+
+//語系
+"Language"="語言";
+
+////Youtube
+
+//YoutubeLoginViewController
+"Youtube_Account_Login"="Google登入";
+
+//YoutubeVideoViewController
+"Youtube_Video_Like_Btn"="喜歡";
+"Youtube_Video_DisLike_Btn"="不喜歡";
+
+//SwiftSpinner
+"Gooogle_Loginging"="Google登入中...";
+"Gooogle_Logouting"="Google登出中...";
+"Video_Loading"="影片載入中...";
+"Data_Loading"="資料更新中...";
+"Data_Sending"="資料傳送中...";
+//CustomAlertViewController
+"Alert_Title"="提示";
+"Alert_Logout_Message"="您確定要登出嗎？";
+"Alert_Confirm"="確認";
+"Alert_Cancel"="取消";
+
+//HorizontalSelector
+"HorizontalSelector_Video_Category"="影片分類";
+"HorizontalSelector_Video_MostPopular"="熱門影片";
+"HorizontalSelector_Video_MyLiked"="喜歡影片";
+
+//API Request
+"API_Requesting"="向伺服器請求資料中...";
+"API_Requesting_Error"="伺服器請求期間發生錯誤 請重新嘗試";
+
+//Video Categories
+"Film & Animation"="影片和動畫";
+"Autos & Vehicles"="汽車相關";
+"Music"="音樂";
+"Pets & Animals"="寵物和動物";
+"Sports"="運動";
+"Short Movies"="微電影";
+"Travel & Events"="旅行和事件";
+"Gaming"="遊戲";
+"Videoblogging"="影音部落客";
+"People & Blogs"="人物和部落格";
+"Comedy"="搞笑";
+"Entertainment"="娛樂";
+"News & Politics"="新聞和政治";
+"Howto & Style"="教學和做法";
+"Education"="教育";
+"Science & Technology"="科學和科技";
+
+//statistics
+"publishedDate_Title"="上傳日期:%@";
+"viewCount_Title"="瀏覽次數:%@";
+"likeCount_Title"="喜歡:%@";
+"dislikeCount_Title"="不喜歡:%@";

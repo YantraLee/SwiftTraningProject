@@ -1,0 +1,71 @@
+/* 
+  LocalizedString.strings
+  SwiftTraningProject
+
+  Created by 吉祥具 on 2017/5/20.
+  Copyright © 2017年 吉祥具. All rights reserved.
+*/
+
+//tab文字
+"Marvel_Tab"="Marvel";
+"Youtube_Tab"="Youtube";
+
+"Marvel_Button"="MarvelBtn";
+"Youtube_Button"="YoutubeBtn";
+
+//語系
+"Language"="Language";
+
+////Youtube
+
+//YoutubeLoginViewController
+"Youtube_Account_Login"="Google Login";
+
+//YoutubeVideoViewController
+"Youtube_Video_Like_Btn"="Like";
+"Youtube_Video_DisLike_Btn"="Dislike";
+
+//SwiftSpinner
+"Gooogle_Loginging"="Google Logining...";
+"Gooogle_Logouting"="Google Logout...";
+"Video_Loading"="Video Loading...";
+"Data_Loading"="Data updating...";
+"Data_Sending"="Data transferring...";
+//CustomAlertViewController
+"Alert_Title"="Alert";
+"Alert_Logout_Message"="Are you sure to logout？";
+"Alert_Confirm"="Confirm";
+"Alert_Cancel"="Cancel";
+
+//HorizontalSelector
+"HorizontalSelector_Video_Category"="Video Categories";
+"HorizontalSelector_Video_MostPopular"="Popular";
+"HorizontalSelector_Video_MyLiked"="Liked";
+
+//API Request
+"API_Requesting"="Send request to server...";
+"API_Requesting_Error"="Server error, please retry";
+
+//Video Categories
+"Film & Animation"="Film & Animation";
+"Autos & Vehicles"="Autos & Vehicles";
+"Music"="Music";
+"Pets & Animals"="Pets & Animals";
+"Sports"="Sports";
+"Short Movies"="Short Movies";
+"Travel & Events"="Travel & Events";
+"Gaming"="Gaming";
+"Videoblogging"="Blogger";
+"People & Blogs"="People & Blogs";
+"Comedy"="Comedy";
+"Entertainment"="Entertainment";
+"News & Politics"="News & Politics";
+"Howto & Style"="Howto & Style";
+"Education"="Education";
+"Science & Technology"="Science & Technology";
+
+//statistics
+"publishedDate_Title"="上傳日期:%@";
+"viewCount_Title"="瀏覽次數:%@";
+"likeCount_Title"="喜歡:%@";
+"dislikeCount_Title"="不喜歡:%@";

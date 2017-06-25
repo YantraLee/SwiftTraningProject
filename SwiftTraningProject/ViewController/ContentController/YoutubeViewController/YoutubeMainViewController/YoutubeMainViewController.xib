@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YoutubeMainViewController">
+            <connections>
+                <outlet property="backGroundContainerView" destination="Zhc-EC-MnG" id="ci9-mn-Lxn"/>
+                <outlet property="backGroundView" destination="wON-NT-VZA" id="QwI-W7-uLp"/>
+                <outlet property="containerView_TopSpace" destination="9eK-lJ-gmu" id="YRp-G6-3hE"/>
+                <outlet property="horizontalSelectorView" destination="Ndc-gC-Hiu" id="7iW-Jr-koW"/>
+                <outlet property="listContainerView" destination="m8I-u4-fLM" id="jwU-1P-hac"/>
+                <outlet property="view" destination="iN0-l3-epB" id="yRk-Ap-gzJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zhc-EC-MnG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shiki_background" translatesAutoresizingMaskIntoConstraints="NO" id="R3J-Rp-1t4">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wON-NT-VZA">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="R3J-Rp-1t4" firstAttribute="leading" secondItem="Zhc-EC-MnG" secondAttribute="leading" id="0Ms-aR-Zgu"/>
+                        <constraint firstItem="R3J-Rp-1t4" firstAttribute="top" secondItem="Zhc-EC-MnG" secondAttribute="top" id="3U1-MJ-Ug7"/>
+                        <constraint firstAttribute="trailing" secondItem="wON-NT-VZA" secondAttribute="trailing" id="dFg-8S-o0m"/>
+                        <constraint firstAttribute="bottom" secondItem="R3J-Rp-1t4" secondAttribute="bottom" id="gre-Ox-hKi"/>
+                        <constraint firstItem="wON-NT-VZA" firstAttribute="leading" secondItem="Zhc-EC-MnG" secondAttribute="leading" id="mg3-C6-gV1"/>
+                        <constraint firstAttribute="bottom" secondItem="wON-NT-VZA" secondAttribute="bottom" id="o11-AV-Ogb"/>
+                        <constraint firstItem="wON-NT-VZA" firstAttribute="top" secondItem="Zhc-EC-MnG" secondAttribute="top" id="uSD-ig-ZeF"/>
+                        <constraint firstAttribute="trailing" secondItem="R3J-Rp-1t4" secondAttribute="trailing" id="zSB-ZC-lZc"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5z-5X-E27">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndc-gC-Hiu">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
+                            <subviews>
+                                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hho-hC-kcv">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Hho-hC-kcv" secondAttribute="trailing" id="2mM-zV-IjN"/>
+                                <constraint firstItem="Hho-hC-kcv" firstAttribute="top" secondItem="Ndc-gC-Hiu" secondAttribute="top" id="KDY-UG-BjE"/>
+                                <constraint firstItem="Hho-hC-kcv" firstAttribute="leading" secondItem="Ndc-gC-Hiu" secondAttribute="leading" id="bSD-aR-Arr"/>
+                                <constraint firstAttribute="bottom" secondItem="Hho-hC-kcv" secondAttribute="bottom" id="ePi-F7-DpV"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m8I-u4-fLM">
+                            <rect key="frame" x="0.0" y="66.5" width="375" height="600.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="m8I-u4-fLM" firstAttribute="leading" secondItem="F5z-5X-E27" secondAttribute="leading" id="DVn-8W-WCW"/>
+                        <constraint firstAttribute="trailing" secondItem="m8I-u4-fLM" secondAttribute="trailing" id="S2F-SH-5fb"/>
+                        <constraint firstItem="Ndc-gC-Hiu" firstAttribute="leading" secondItem="F5z-5X-E27" secondAttribute="leading" id="VPI-sw-F91"/>
+                        <constraint firstItem="m8I-u4-fLM" firstAttribute="top" secondItem="Ndc-gC-Hiu" secondAttribute="bottom" id="cvh-0o-gp5"/>
+                        <constraint firstAttribute="bottom" secondItem="m8I-u4-fLM" secondAttribute="bottom" id="dU2-2s-ym3"/>
+                        <constraint firstItem="Ndc-gC-Hiu" firstAttribute="top" secondItem="F5z-5X-E27" secondAttribute="top" id="fge-7z-lgd"/>
+                        <constraint firstAttribute="trailing" secondItem="Ndc-gC-Hiu" secondAttribute="trailing" id="k9z-28-l14"/>
+                        <constraint firstItem="Ndc-gC-Hiu" firstAttribute="height" secondItem="F5z-5X-E27" secondAttribute="height" multiplier="1:10" id="pea-sO-QoZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Zhc-EC-MnG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0hW-Ov-aSi"/>
+                <constraint firstItem="Zhc-EC-MnG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="76J-k8-SlE"/>
+                <constraint firstItem="F5z-5X-E27" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9eK-lJ-gmu"/>
+                <constraint firstAttribute="bottom" secondItem="Zhc-EC-MnG" secondAttribute="bottom" id="EV7-kC-Dw0"/>
+                <constraint firstItem="F5z-5X-E27" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EnQ-VC-nYf"/>
+                <constraint firstAttribute="trailing" secondItem="Zhc-EC-MnG" secondAttribute="trailing" id="f6F-uZ-NZ3"/>
+                <constraint firstAttribute="bottom" secondItem="F5z-5X-E27" secondAttribute="bottom" id="qLO-23-qcA"/>
+                <constraint firstAttribute="trailing" secondItem="F5z-5X-E27" secondAttribute="trailing" id="qom-lg-Alm"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shiki_background" width="346" height="512"/>
+    </resources>
+</document>
