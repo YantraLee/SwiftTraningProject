@@ -17,6 +17,7 @@ class YoutubeContentDetailsModel: Mappable {
     var caption:String = ""
     var licensedContent:Bool = false
     var projection:String = ""
+    var relatedPlaylists:YoutubeRelatedPlaylistsModel?
     
     required init?(map: Map) {
         
@@ -30,5 +31,6 @@ class YoutubeContentDetailsModel: Mappable {
         caption <- map["caption"]
         licensedContent <- map["licensedContent"]
         projection <- map["projection"]
+        relatedPlaylists <- map["relatedPlaylists"]
     }
 }

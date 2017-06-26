@@ -18,6 +18,7 @@ class YoutubeItemModel:Mappable{
     var snippet:YoutubeSnippetModel?
     var contentDetails:YoutubeContentDetailsModel?
     var statistics:YoutubeStatisticsModel?
+    var replies:YoutubeRepliesModel?
     
     required init?(map: Map) {
         
@@ -32,5 +33,6 @@ class YoutubeItemModel:Mappable{
         snippet <- map["snippet"]
         contentDetails <- map["contentDetails"]
         statistics <- map["statistics"]
+        replies <- map["replies"]
     }
 }

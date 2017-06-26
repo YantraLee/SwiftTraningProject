@@ -24,6 +24,10 @@
 //YoutubeVideoViewController
 "Youtube_Video_Like_Btn"="Like";
 "Youtube_Video_DisLike_Btn"="Dislike";
+"Youtube_Video_Add_Comment"="Add Comment";
+"Youtube_Video_Reply"="Reply";
+"Youtube_Video_Cannot_Reply"="Can't Reply";
+"Youtube_Video_Check_All_Comments"="Check all %d replies";
 
 //SwiftSpinner
 "Gooogle_Loginging"="Google Logining...";

@@ -20,7 +20,7 @@ class YoutubePlayerViewController: UIViewController ,YTPlayerViewDelegate {
     //變數宣告的區域
     var videoID : String?
     var playerVars:[String:Int]! {
-        return ["playsinline" : 1] //playsinline設為true 代表可以非全畫面播放
+        return ["playsinline" : 0] //playsinline設為true 代表可以非全畫面播放
     }
     
 // MARK:- LifeCycle
@@ -40,7 +40,7 @@ class YoutubePlayerViewController: UIViewController ,YTPlayerViewDelegate {
 // MARK:- init
     func initPlayer() -> Void{
         playerView.delegate=self
-        playerView.load(withVideoId: videoID!)
+        playerView.load(withVideoId: videoID!, playerVars: playerVars)
     }
 
 

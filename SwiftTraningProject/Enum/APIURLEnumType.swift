@@ -11,7 +11,9 @@ import Foundation
 enum APIURLEnumType:String{
     case activities = "/activities"
     case videoCategories = "/videoCategories"
+    case channels = "/channels"
     case videos = "/videos"
     case videosGetRating = "/videos/getRating"
     case videosRate = "/videos/rate"
+    case commentThreads = "/commentThreads"
 }

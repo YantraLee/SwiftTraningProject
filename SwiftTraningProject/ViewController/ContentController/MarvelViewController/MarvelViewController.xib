@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -71,21 +71,41 @@
                     <rect key="frame" x="135" y="529.5" width="104" height="30"/>
                     <state key="normal" title="deleteProgress"/>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8l-WO-nq0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wait to be finished...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhY-TF-KHe">
+                            <rect key="frame" x="107" y="323" width="161" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="mhY-TF-KHe" firstAttribute="centerY" secondItem="x8l-WO-nq0" secondAttribute="centerY" id="pqZ-74-M4P"/>
+                        <constraint firstItem="mhY-TF-KHe" firstAttribute="centerX" secondItem="x8l-WO-nq0" secondAttribute="centerX" id="v97-qz-Mw3"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="3d0-eu-GV4" secondAttribute="bottom" id="7NZ-8X-w0r"/>
                 <constraint firstItem="3d0-eu-GV4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7ql-Xr-6dl"/>
+                <constraint firstAttribute="trailing" secondItem="x8l-WO-nq0" secondAttribute="trailing" id="8Av-ud-1P3"/>
                 <constraint firstItem="PnS-VP-cug" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9Vf-jw-Efo"/>
                 <constraint firstItem="Sod-uk-IxL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IiW-ES-c67"/>
                 <constraint firstAttribute="trailing" secondItem="3d0-eu-GV4" secondAttribute="trailing" id="JFP-Ib-gsC"/>
                 <constraint firstItem="st5-Di-5bh" firstAttribute="top" secondItem="cHa-bb-Xv6" secondAttribute="bottom" constant="50" id="KSP-KB-m5k"/>
                 <constraint firstItem="cHa-bb-Xv6" firstAttribute="top" secondItem="PnS-VP-cug" secondAttribute="bottom" constant="30" id="Q1d-pk-OGX"/>
+                <constraint firstItem="x8l-WO-nq0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Q7f-aJ-0tW"/>
                 <constraint firstItem="PnS-VP-cug" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TIK-ee-e7z"/>
                 <constraint firstItem="st5-Di-5bh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="k1f-G4-sPT"/>
                 <constraint firstItem="3d0-eu-GV4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kLi-vG-dIT"/>
+                <constraint firstAttribute="bottom" secondItem="x8l-WO-nq0" secondAttribute="bottom" id="nnC-pw-rJq"/>
                 <constraint firstItem="Sod-uk-IxL" firstAttribute="top" secondItem="st5-Di-5bh" secondAttribute="bottom" constant="50" id="ph6-Ax-sL8"/>
                 <constraint firstItem="cHa-bb-Xv6" firstAttribute="centerX" secondItem="PnS-VP-cug" secondAttribute="centerX" id="sMc-mn-1lf"/>
+                <constraint firstItem="x8l-WO-nq0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xeK-cx-53Y"/>
             </constraints>
         </view>
     </objects>

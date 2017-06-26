@@ -42,7 +42,7 @@ class YoutubeMainViewModel {
                 progressView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
             }
     }
-    //製造供viewCell使用的model
+// MARK: - create MostPupularVideosViewCellModel
     func createMostPupularVideosViewCellModel(forIndex index:Int) -> VideoViewCellModel{
         if let imageGet = mostPopularVideoImageCacheArray[index]{
              return VideoViewCellModel.init(withVideoSnippet: (mostPopularVideosModel?.items![index].snippet)!, withVideoStatistics: (mostPopularVideosModel?.items![index].statistics)!, withImage: imageGet as? UIImage, withProgressView: (mostPopularProgressViewArray[index])! as! CircularLoaderView)
@@ -69,7 +69,7 @@ class YoutubeMainViewModel {
             progressView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
         }
     }
-    //製造供viewCell使用的model
+// MARK: - create ViewCategoryViewCellModel
     func createMyLikeVideosViewCellModel(forIndex index:Int) -> VideoViewCellModel {
         if let imageGet = myLikedVideoImageCacheArray[index]{
             return VideoViewCellModel.init(withVideoSnippet: (myLikedVideosModel.items![index].snippet)!, withVideoStatistics: (myLikedVideosModel?.items![index].statistics)!, withImage: imageGet as? UIImage, withProgressView: (myLikedProgressViewArray[index])! as! CircularLoaderView)
@@ -77,10 +77,20 @@ class YoutubeMainViewModel {
               return VideoViewCellModel.init(withVideoSnippet: (myLikedVideosModel?.items![index].snippet)!, withVideoStatistics: (myLikedVideosModel?.items![index].statistics)!, withImage: nil, withProgressView: (myLikedProgressViewArray[index])! as! CircularLoaderView)
         }
     }
+// MARK: - clean cache
+    func cleanCache(){
+        mostPopularVideosItemArray.removeAll()
+        mostPopularProgressViewArray.removeAll()
+        mostPopularVideoImageCacheArray.removeAll()
+        
+        myLikedVideosItemArray.removeAll()
+        myLikedProgressViewArray.removeAll()
+        myLikedVideoImageCacheArray.removeAll()
+    }
 }
 
 
-//對應各個ViewCell的Model
+// MARK:- ViewCategoryViewCellModel for ViewCategoryViewCell
 struct ViewCategoryViewCellModel{
     let mainTitle:String
     let subTitle:String
@@ -91,6 +101,7 @@ struct ViewCategoryViewCellModel{
     }
 }
 
+// MARK:- VideoViewCellModel for VideoViewCell
 struct VideoViewCellModel {
     let mainTitle:String //取localized內的參數
     let publishedAt:String

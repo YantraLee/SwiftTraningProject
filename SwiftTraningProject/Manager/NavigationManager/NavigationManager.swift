@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class NavigationManager : NSObject, UIViewControllerTransitioningDelegate ,YoutubeViewLoginControllerDelegate,YoutubeMainViewControllerDelegate{
+class NavigationManager : NSObject, UIViewControllerTransitioningDelegate ,YoutubeViewLoginControllerDelegate,YoutubeMainViewControllerDelegate, YoutubeVideoViewControllerDelegate{
     
     //SigleTon宣告
     private static var mInstance : NavigationManager?
@@ -19,7 +19,7 @@ class NavigationManager : NSObject, UIViewControllerTransitioningDelegate ,Youtu
     private var marvelViewControllerNav : UINavigationController?
     private var youtubeLoginViewControllerNav: UINavigationController?
     
-//TODO: Singleton create
+// MARK:- Singleton create
     static func shareInstance() -> NavigationManager{
         if (mInstance == nil) {
             mInstance=NavigationManager()
@@ -29,7 +29,7 @@ class NavigationManager : NSObject, UIViewControllerTransitioningDelegate ,Youtu
         return mInstance!
     }
 
-//TODO: tabarView Create
+// MARK:- tabarView Create
     func createTabBar(){
         //create tabBar item 
         let marvelViewController = MarvelViewController()
@@ -49,12 +49,12 @@ class NavigationManager : NSObject, UIViewControllerTransitioningDelegate ,Youtu
         tabarVC!.viewControllers=[marvelViewControllerNav!,youtubeLoginViewControllerNav!]
     }
 
-//TODO: 回傳建好的tabBarVC
+// MARK:- 回傳建好的tabBarVC
     func getTabBarVC() -> MainTabViewController{
         return tabarVC!
     }
 
-//TODO: UIViewControllerAnimatedTransitioning delegate
+// MARK:- UIViewControllerAnimatedTransitioning delegate
    
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning?{
         let transitioning = Animations()
@@ -68,7 +68,7 @@ class NavigationManager : NSObject, UIViewControllerTransitioningDelegate ,Youtu
         return transitioning
     }
 
-//TODO: pushViewController 自定方法
+// MARK:- pushViewController 自定方法
     func pushViewController(VC viewController:UIViewController, tabType tabTypeSet:TabEnumType, animated animatedSet:Bool){
         var nav : UINavigationController?
         switch tabTypeSet {
@@ -89,7 +89,7 @@ class NavigationManager : NSObject, UIViewControllerTransitioningDelegate ,Youtu
         }
     }
  
-//TODO: YoutubeViewLoginControllerDelegate
+// MARK:- YoutubeViewLoginControllerDelegate
     func didYoutubeViewLoginController(withObject Dict:[String:AnyObject]?, event eventGet:YoutubeViewLoginControllerEvent){
         switch eventGet {
             case .YoutubeViewLoginControllerEvent_ToMain:
@@ -101,21 +101,27 @@ class NavigationManager : NSObject, UIViewControllerTransitioningDelegate ,Youtu
     }
     
     
-//TODO:YoutubeMainViewControllerDelegate
+// MARK:- YoutubeMainViewControllerDelegate
     func didYoutubeMainViewController(withObject Dict:[String:AnyObject]?, event eventGet:YoutubeMainViewControllerEvent){
         switch eventGet {
-        case .YoutubeMainViewControllerEvent_ToPlayer:
-          let youtubePlayerViewController = YoutubePlayerViewController()
-          youtubePlayerViewController.videoID = Dict?["VideoID"] as? String
-          pushViewController(VC: youtubePlayerViewController, tabType: .YoutubeTab, animated: true)
-        break
         case .YoutubeMainViewControllerEvent_ToVideo:
             let youtubeVideoViewController = YoutubeVideoViewController()
-            youtubeVideoViewController.youtubeVideoViewModel.youtubeItemModel = Dict?["youtubeItemModel"] as? YoutubeItemModel
+            youtubeVideoViewController.youtubeVideoViewModel.youtubeVideoItemModel = Dict?["youtubeItemModel"] as? YoutubeItemModel
+            youtubeVideoViewController.delegate = self
             pushViewController(VC: youtubeVideoViewController, tabType: .YoutubeTab, animated: true)
         break
         }
     }
 
+// MARK:- YoutubeVideoViewControllerDelegate
+    func didYoutubeVideoViewController(withObject Dict: [String : AnyObject]?, event eventGet: YoutubeVideoViewControllerEvent) {
+        switch eventGet {
+        case .YoutubeVideoViewControllerEvent_ToPlayer:
+            let youtubePlayerViewController = YoutubePlayerViewController()
+            youtubePlayerViewController.videoID = Dict?["VideoID"] as? String
+            pushViewController(VC: youtubePlayerViewController, tabType: .YoutubeTab, animated: true)
+            break
+        }
+    }
 }
 

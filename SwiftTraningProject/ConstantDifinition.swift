@@ -44,5 +44,6 @@ let localDateformat = "yyyy-MM-dd"
 let snippetPart = "snippet"
 let contentDetailsPart = "contentDetails"
 let statisticsPart = "statistics"
+let repliesPart = "replies"
 //URLSession identifier const  用來判斷為兩組不同的urlSession下載佇列
 let urlSessionIdentifierConst = 50000

@@ -24,6 +24,10 @@
 //YoutubeVideoViewController
 "Youtube_Video_Like_Btn"="喜歡";
 "Youtube_Video_DisLike_Btn"="不喜歡";
+"Youtube_Video_Add_Comment"="添加評論";
+"Youtube_Video_Reply"="回覆";
+"Youtube_Video_Cannot_Reply"="無法回覆";
+"Youtube_Video_Check_All_Comments"="查看全部%d則回覆";
 
 //SwiftSpinner
 "Gooogle_Loginging"="Google登入中...";

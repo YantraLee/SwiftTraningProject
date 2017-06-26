@@ -25,9 +25,26 @@
 		E21ECC1C1EEE92A700087187 /* APIURLEnumType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21ECC1B1EEE92A700087187 /* APIURLEnumType.swift */; };
 		E2259C941EEA9E2100BFD178 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2259C931EEA9E2100BFD178 /* Animations.swift */; };
 		E230821B1EE71C6300674975 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230821A1EE71C6300674975 /* CustomButton.swift */; };
+		E24000001F01046100E18A53 /* YoutubeAuthorChannelIdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240FFF71F01046100E18A53 /* YoutubeAuthorChannelIdModel.swift */; };
+		E24000011F01046100E18A53 /* YoutubeLocalizedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240FFF81F01046100E18A53 /* YoutubeLocalizedModel.swift */; };
+		E24000021F01046100E18A53 /* YoutubeSnippetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240FFF91F01046100E18A53 /* YoutubeSnippetModel.swift */; };
+		E24000031F01046100E18A53 /* YoutubeThumbnailQualityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240FFFA1F01046100E18A53 /* YoutubeThumbnailQualityModel.swift */; };
+		E24000041F01046100E18A53 /* YoutubeThumbnailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240FFFB1F01046100E18A53 /* YoutubeThumbnailsModel.swift */; };
+		E24000051F01046100E18A53 /* YoutubeTopLevelCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240FFFC1F01046100E18A53 /* YoutubeTopLevelCommentModel.swift */; };
+		E24000061F01046100E18A53 /* YoutubeTopLevelCommentSnippetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240FFFD1F01046100E18A53 /* YoutubeTopLevelCommentSnippetModel.swift */; };
+		E24000081F01047700E18A53 /* YoutubeRepliesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24000071F01047600E18A53 /* YoutubeRepliesModel.swift */; };
+		E240000A1F0104EE00E18A53 /* YoutubeCommentThreadsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24000091F0104ED00E18A53 /* YoutubeCommentThreadsModel.swift */; };
+		E240FFE21F00E0B900E18A53 /* YoutubeChannelsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240FFE11F00E0B900E18A53 /* YoutubeChannelsModel.swift */; };
+		E240FFE41F00E23800E18A53 /* YoutubeRelatedPlaylistsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240FFE31F00E23800E18A53 /* YoutubeRelatedPlaylistsModel.swift */; };
+		E240FFE71F00F59F00E18A53 /* CommentThreadsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240FFE61F00F59F00E18A53 /* CommentThreadsViewCell.swift */; };
+		E240FFE91F00F5A500E18A53 /* CommentThreadsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E240FFE81F00F5A500E18A53 /* CommentThreadsViewCell.xib */; };
+		E240FFFE1F01046100E18A53 /* YoutubeCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240FFF41F01046100E18A53 /* YoutubeCommentModel.swift */; };
+		E240FFFF1F01046100E18A53 /* YoutubeCommentSnipperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240FFF51F01046100E18A53 /* YoutubeCommentSnipperModel.swift */; };
 		E2506CE11F00269F00CAA0BF /* ArrayStringConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2506CE01F00269F00CAA0BF /* ArrayStringConversion.swift */; };
+		E2506CE61F004AFC00CAA0BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2506CE51F004AFB00CAA0BF /* GoogleService-Info.plist */; };
+		E2506CE91F01659D00CAA0BF /* YoutubeAddTopLevelCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2506CE81F01659D00CAA0BF /* YoutubeAddTopLevelCommentViewController.swift */; };
+		E2506CEB1F0165A600CAA0BF /* YoutubeAddTopLevelCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2506CEA1F0165A600CAA0BF /* YoutubeAddTopLevelCommentViewController.xib */; };
 		E25ED4861EF8D2AD00070D7D /* YoutubeVideosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25ED4851EF8D2AD00070D7D /* YoutubeVideosModel.swift */; };
-		E25ED4881EF8D78B00070D7D /* YoutubeLocalizedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25ED4871EF8D78B00070D7D /* YoutubeLocalizedModel.swift */; };
 		E25ED48A1EF8D94600070D7D /* YoutubeStatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25ED4891EF8D94600070D7D /* YoutubeStatisticsModel.swift */; };
 		E25ED4931EF91F3D00070D7D /* VideosViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25ED4911EF91F3D00070D7D /* VideosViewCell.swift */; };
 		E25ED4941EF91F3D00070D7D /* VideosViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E25ED4921EF91F3D00070D7D /* VideosViewCell.xib */; };
@@ -57,9 +74,6 @@
 		E2A2FDF61EF667FB00FE5DBC /* CustomeHorizontalSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2FDF51EF667FB00FE5DBC /* CustomeHorizontalSelectorView.swift */; };
 		E2A2FDFA1EF69CCE00FE5DBC /* YoutubeItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2FDF91EF69CCE00FE5DBC /* YoutubeItemModel.swift */; };
 		E2A2FDFC1EF69DDB00FE5DBC /* YoutubeVideoCategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2FDFB1EF69DDB00FE5DBC /* YoutubeVideoCategoriesModel.swift */; };
-		E2A2FE051EF6A7FF00FE5DBC /* YoutubeSnippetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2FE021EF6A7FF00FE5DBC /* YoutubeSnippetModel.swift */; };
-		E2A2FE061EF6A7FF00FE5DBC /* YoutubeThumbnailQualityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2FE031EF6A7FF00FE5DBC /* YoutubeThumbnailQualityModel.swift */; };
-		E2A2FE071EF6A7FF00FE5DBC /* YoutubeThumbnailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2FE041EF6A7FF00FE5DBC /* YoutubeThumbnailsModel.swift */; };
 		E2A2FE0A1EF6A83F00FE5DBC /* YoutubeResourceIdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2FE091EF6A83F00FE5DBC /* YoutubeResourceIdModel.swift */; };
 		E2A2FE0C1EF6A88400FE5DBC /* YoutubeLikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2FE0B1EF6A88400FE5DBC /* YoutubeLikeModel.swift */; };
 		E2A2FE0E1EF6A8D600FE5DBC /* YoutubeContentDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2FE0D1EF6A8D600FE5DBC /* YoutubeContentDetailsModel.swift */; };
@@ -95,10 +109,27 @@
 		E21ECC1B1EEE92A700087187 /* APIURLEnumType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURLEnumType.swift; sourceTree = "<group>"; };
 		E2259C931EEA9E2100BFD178 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		E230821A1EE71C6300674975 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		E24000071F01047600E18A53 /* YoutubeRepliesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeRepliesModel.swift; sourceTree = "<group>"; };
+		E24000091F0104ED00E18A53 /* YoutubeCommentThreadsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeCommentThreadsModel.swift; sourceTree = "<group>"; };
+		E240FFE11F00E0B900E18A53 /* YoutubeChannelsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeChannelsModel.swift; sourceTree = "<group>"; };
+		E240FFE31F00E23800E18A53 /* YoutubeRelatedPlaylistsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeRelatedPlaylistsModel.swift; sourceTree = "<group>"; };
+		E240FFE61F00F59F00E18A53 /* CommentThreadsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentThreadsViewCell.swift; sourceTree = "<group>"; };
+		E240FFE81F00F5A500E18A53 /* CommentThreadsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentThreadsViewCell.xib; sourceTree = "<group>"; };
+		E240FFF41F01046100E18A53 /* YoutubeCommentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeCommentModel.swift; sourceTree = "<group>"; };
+		E240FFF51F01046100E18A53 /* YoutubeCommentSnipperModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeCommentSnipperModel.swift; sourceTree = "<group>"; };
+		E240FFF71F01046100E18A53 /* YoutubeAuthorChannelIdModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeAuthorChannelIdModel.swift; sourceTree = "<group>"; };
+		E240FFF81F01046100E18A53 /* YoutubeLocalizedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeLocalizedModel.swift; sourceTree = "<group>"; };
+		E240FFF91F01046100E18A53 /* YoutubeSnippetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeSnippetModel.swift; sourceTree = "<group>"; };
+		E240FFFA1F01046100E18A53 /* YoutubeThumbnailQualityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeThumbnailQualityModel.swift; sourceTree = "<group>"; };
+		E240FFFB1F01046100E18A53 /* YoutubeThumbnailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeThumbnailsModel.swift; sourceTree = "<group>"; };
+		E240FFFC1F01046100E18A53 /* YoutubeTopLevelCommentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeTopLevelCommentModel.swift; sourceTree = "<group>"; };
+		E240FFFD1F01046100E18A53 /* YoutubeTopLevelCommentSnippetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeTopLevelCommentSnippetModel.swift; sourceTree = "<group>"; };
 		E2506CE01F00269F00CAA0BF /* ArrayStringConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayStringConversion.swift; sourceTree = "<group>"; };
 		E2506CE21F00341900CAA0BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizedString.strings; sourceTree = "<group>"; };
+		E2506CE51F004AFB00CAA0BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2506CE81F01659D00CAA0BF /* YoutubeAddTopLevelCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeAddTopLevelCommentViewController.swift; sourceTree = "<group>"; };
+		E2506CEA1F0165A600CAA0BF /* YoutubeAddTopLevelCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YoutubeAddTopLevelCommentViewController.xib; sourceTree = "<group>"; };
 		E25ED4851EF8D2AD00070D7D /* YoutubeVideosModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeVideosModel.swift; sourceTree = "<group>"; };
-		E25ED4871EF8D78B00070D7D /* YoutubeLocalizedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeLocalizedModel.swift; sourceTree = "<group>"; };
 		E25ED4891EF8D94600070D7D /* YoutubeStatisticsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeStatisticsModel.swift; sourceTree = "<group>"; };
 		E25ED4911EF91F3D00070D7D /* VideosViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosViewCell.swift; sourceTree = "<group>"; };
 		E25ED4921EF91F3D00070D7D /* VideosViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideosViewCell.xib; sourceTree = "<group>"; };
@@ -128,9 +159,6 @@
 		E2A2FDF51EF667FB00FE5DBC /* CustomeHorizontalSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeHorizontalSelectorView.swift; sourceTree = "<group>"; };
 		E2A2FDF91EF69CCE00FE5DBC /* YoutubeItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeItemModel.swift; sourceTree = "<group>"; };
 		E2A2FDFB1EF69DDB00FE5DBC /* YoutubeVideoCategoriesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeVideoCategoriesModel.swift; sourceTree = "<group>"; };
-		E2A2FE021EF6A7FF00FE5DBC /* YoutubeSnippetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeSnippetModel.swift; sourceTree = "<group>"; };
-		E2A2FE031EF6A7FF00FE5DBC /* YoutubeThumbnailQualityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeThumbnailQualityModel.swift; sourceTree = "<group>"; };
-		E2A2FE041EF6A7FF00FE5DBC /* YoutubeThumbnailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeThumbnailsModel.swift; sourceTree = "<group>"; };
 		E2A2FE091EF6A83F00FE5DBC /* YoutubeResourceIdModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeResourceIdModel.swift; sourceTree = "<group>"; };
 		E2A2FE0B1EF6A88400FE5DBC /* YoutubeLikeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeLikeModel.swift; sourceTree = "<group>"; };
 		E2A2FE0D1EF6A8D600FE5DBC /* YoutubeContentDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeContentDetailsModel.swift; sourceTree = "<group>"; };
@@ -286,6 +314,7 @@
 				E21590851ECEA44E00F78C37 /* LaunchScreen.storyboard */,
 				E21590881ECEA44E00F78C37 /* Info.plist */,
 				E20F5BC61ED08A66000B84B7 /* LocalizedString.strings */,
+				E2506CE51F004AFB00CAA0BF /* GoogleService-Info.plist */,
 				E2ECB9261EE68C0D0026186A /* SwiftTraningProject-Bridging-Header.h */,
 				E2ECB9321EE6AC590026186A /* ConstantDifinition.swift */,
 			);
@@ -300,6 +329,48 @@
 			path = APIManager;
 			sourceTree = "<group>";
 		};
+		E240FFE51F00F59700E18A53 /* CommentThreadsViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E240FFE61F00F59F00E18A53 /* CommentThreadsViewCell.swift */,
+				E240FFE81F00F5A500E18A53 /* CommentThreadsViewCell.xib */,
+			);
+			path = CommentThreadsViewCell;
+			sourceTree = "<group>";
+		};
+		E240FFF31F01046100E18A53 /* YoutubeRepliesModels */ = {
+			isa = PBXGroup;
+			children = (
+				E24000071F01047600E18A53 /* YoutubeRepliesModel.swift */,
+				E240FFF41F01046100E18A53 /* YoutubeCommentModel.swift */,
+				E240FFF51F01046100E18A53 /* YoutubeCommentSnipperModel.swift */,
+			);
+			path = YoutubeRepliesModels;
+			sourceTree = "<group>";
+		};
+		E240FFF61F01046100E18A53 /* YoutubeSnippetModels */ = {
+			isa = PBXGroup;
+			children = (
+				E240FFF71F01046100E18A53 /* YoutubeAuthorChannelIdModel.swift */,
+				E240FFF81F01046100E18A53 /* YoutubeLocalizedModel.swift */,
+				E240FFF91F01046100E18A53 /* YoutubeSnippetModel.swift */,
+				E240FFFA1F01046100E18A53 /* YoutubeThumbnailQualityModel.swift */,
+				E240FFFB1F01046100E18A53 /* YoutubeThumbnailsModel.swift */,
+				E240FFFC1F01046100E18A53 /* YoutubeTopLevelCommentModel.swift */,
+				E240FFFD1F01046100E18A53 /* YoutubeTopLevelCommentSnippetModel.swift */,
+			);
+			path = YoutubeSnippetModels;
+			sourceTree = "<group>";
+		};
+		E2506CE71F01658900CAA0BF /* YoutubeAddTopLevelCommentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2506CE81F01659D00CAA0BF /* YoutubeAddTopLevelCommentViewController.swift */,
+				E2506CEA1F0165A600CAA0BF /* YoutubeAddTopLevelCommentViewController.xib */,
+			);
+			path = YoutubeAddTopLevelCommentViewController;
+			sourceTree = "<group>";
+		};
 		E25ED4901EF91F3D00070D7D /* VideosViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +383,7 @@
 		E269C13F1EFE84C4008532B3 /* YoutubeVideoViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E2506CE71F01658900CAA0BF /* YoutubeAddTopLevelCommentViewController */,
 				E269C1401EFE84D5008532B3 /* YoutubeVideoViewController.swift */,
 				E269C1421EFE84DA008532B3 /* YoutubeVideoViewController.xib */,
 			);
@@ -347,9 +419,9 @@
 		E26EDA151ED2DEAA00818052 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				E21ECC1B1EEE92A700087187 /* APIURLEnumType.swift */,
 				E26EDA161ED2DEC100818052 /* TabEnumType.swift */,
 				E20152661EEAABFF00E91607 /* FadeTransitionType.swift */,
-				E21ECC1B1EEE92A700087187 /* APIURLEnumType.swift */,
 				E27522991EF7D0640046282A /* TableViewsEnumType.swift */,
 				E269C13D1EF8466F008532B3 /* ScrollViewEnumType.swift */,
 				E269C14A1EFFFBA7008532B3 /* YoutubeRatingEnumType.swift */,
@@ -362,6 +434,7 @@
 			children = (
 				E27522921EF7852A0046282A /* VideoCategoryViewCell */,
 				E25ED4901EF91F3D00070D7D /* VideosViewCell */,
+				E240FFE51F00F59700E18A53 /* CommentThreadsViewCell */,
 			);
 			path = ViewCell;
 			sourceTree = "<group>";
@@ -391,12 +464,15 @@
 				E2A2FDED1EEC6C1C00FE5DBC /* USERInfoModel.swift */,
 				E269C1391EF6AB7B008532B3 /* YoutubeActivitiesModel.swift */,
 				E2A2FDFB1EF69DDB00FE5DBC /* YoutubeVideoCategoriesModel.swift */,
+				E240FFE11F00E0B900E18A53 /* YoutubeChannelsModel.swift */,
+				E24000091F0104ED00E18A53 /* YoutubeCommentThreadsModel.swift */,
 				E25ED4851EF8D2AD00070D7D /* YoutubeVideosModel.swift */,
 				E2A2FDF91EF69CCE00FE5DBC /* YoutubeItemModel.swift */,
 				E2A2FE0F1EF6A98F00FE5DBC /* YoutubePageInfoModel.swift */,
 				E25ED4891EF8D94600070D7D /* YoutubeStatisticsModel.swift */,
 				E2A2FE081EF6A82C00FE5DBC /* YoutubeContenDetailsModels */,
-				E2A2FE011EF6A7FF00FE5DBC /* YoutubeSnippetModels */,
+				E240FFF61F01046100E18A53 /* YoutubeSnippetModels */,
+				E240FFF31F01046100E18A53 /* YoutubeRepliesModels */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -411,23 +487,13 @@
 			path = YoutubeViewModel;
 			sourceTree = "<group>";
 		};
-		E2A2FE011EF6A7FF00FE5DBC /* YoutubeSnippetModels */ = {
-			isa = PBXGroup;
-			children = (
-				E2A2FE021EF6A7FF00FE5DBC /* YoutubeSnippetModel.swift */,
-				E2A2FE031EF6A7FF00FE5DBC /* YoutubeThumbnailQualityModel.swift */,
-				E2A2FE041EF6A7FF00FE5DBC /* YoutubeThumbnailsModel.swift */,
-				E25ED4871EF8D78B00070D7D /* YoutubeLocalizedModel.swift */,
-			);
-			path = YoutubeSnippetModels;
-			sourceTree = "<group>";
-		};
 		E2A2FE081EF6A82C00FE5DBC /* YoutubeContenDetailsModels */ = {
 			isa = PBXGroup;
 			children = (
 				E2A2FE0D1EF6A8D600FE5DBC /* YoutubeContentDetailsModel.swift */,
 				E2A2FE0B1EF6A88400FE5DBC /* YoutubeLikeModel.swift */,
 				E2A2FE091EF6A83F00FE5DBC /* YoutubeResourceIdModel.swift */,
+				E240FFE31F00E23800E18A53 /* YoutubeRelatedPlaylistsModel.swift */,
 			);
 			path = YoutubeContenDetailsModels;
 			sourceTree = "<group>";
@@ -523,14 +589,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E240FFE91F00F5A500E18A53 /* CommentThreadsViewCell.xib in Resources */,
 				E25ED4941EF91F3D00070D7D /* VideosViewCell.xib in Resources */,
 				E2ECB92D1EE6A6560026186A /* YoutubeViewLoginController.xib in Resources */,
 				E2A3D5751EEC121C00C28AAF /* YoutubePlayerViewController.xib in Resources */,
 				E27522961EF7853A0046282A /* VideoCategoryViewCell.xib in Resources */,
 				E2A3D5701EEC10AC00C28AAF /* YoutubeMainViewController.xib in Resources */,
 				E21590871ECEA44E00F78C37 /* LaunchScreen.storyboard in Resources */,
+				E2506CEB1F0165A600CAA0BF /* YoutubeAddTopLevelCommentViewController.xib in Resources */,
 				E21590841ECEA44E00F78C37 /* Assets.xcassets in Resources */,
 				E20F5BBA1ED07C95000B84B7 /* MarvelViewController.xib in Resources */,
+				E2506CE61F004AFC00CAA0BF /* GoogleService-Info.plist in Resources */,
 				E269C1431EFE84DA008532B3 /* YoutubeVideoViewController.xib in Resources */,
 				E20F5BC81ED08A66000B84B7 /* LocalizedString.strings in Resources */,
 			);
@@ -600,32 +669,38 @@
 				E269C1461EFEAB0E008532B3 /* YoutubeLoginViewModel.swift in Sources */,
 				E2A2FDEC1EEC69B100FE5DBC /* CustomNavigationBarItem.swift in Sources */,
 				E269C13C1EF8391E008532B3 /* TabBarHideShow.swift in Sources */,
+				E24000001F01046100E18A53 /* YoutubeAuthorChannelIdModel.swift in Sources */,
 				E27522901EF777490046282A /* CustomContainerTableViews.swift in Sources */,
 				E269C13E1EF8466F008532B3 /* ScrollViewEnumType.swift in Sources */,
 				E215907D1ECEA44E00F78C37 /* AppDelegate.swift in Sources */,
 				E2A3D5731EEC121600C28AAF /* YoutubePlayerViewController.swift in Sources */,
 				E269C1411EFE84D5008532B3 /* YoutubeVideoViewController.swift in Sources */,
+				E2506CE91F01659D00CAA0BF /* YoutubeAddTopLevelCommentViewController.swift in Sources */,
 				E25ED48A1EF8D94600070D7D /* YoutubeStatisticsModel.swift in Sources */,
+				E240FFE71F00F59F00E18A53 /* CommentThreadsViewCell.swift in Sources */,
 				E21ECC1C1EEE92A700087187 /* APIURLEnumType.swift in Sources */,
 				E294DAC01EFA555A00B8A77B /* CircularLoaderView.swift in Sources */,
-				E25ED4881EF8D78B00070D7D /* YoutubeLocalizedModel.swift in Sources */,
 				E20F5BB41ED07BBA000B84B7 /* MainTabViewController.swift in Sources */,
 				E2A2FE0A1EF6A83F00FE5DBC /* YoutubeResourceIdModel.swift in Sources */,
+				E24000061F01046100E18A53 /* YoutubeTopLevelCommentSnippetModel.swift in Sources */,
 				E20F5BC31ED08022000B84B7 /* LocalizationManager.swift in Sources */,
 				E2A2FDFC1EF69DDB00FE5DBC /* YoutubeVideoCategoriesModel.swift in Sources */,
+				E24000021F01046100E18A53 /* YoutubeSnippetModel.swift in Sources */,
+				E24000031F01046100E18A53 /* YoutubeThumbnailQualityModel.swift in Sources */,
+				E240FFE21F00E0B900E18A53 /* YoutubeChannelsModel.swift in Sources */,
 				E275229A1EF7D0640046282A /* TableViewsEnumType.swift in Sources */,
 				E269C13A1EF6AB7B008532B3 /* YoutubeActivitiesModel.swift in Sources */,
 				E27DD5181ED409F2004F9D53 /* MarvelViewModel.swift in Sources */,
+				E24000011F01046100E18A53 /* YoutubeLocalizedModel.swift in Sources */,
 				E2A2FDF61EF667FB00FE5DBC /* CustomeHorizontalSelectorView.swift in Sources */,
 				E27522941EF785340046282A /* VideoCategoryViewCell.swift in Sources */,
 				E269C1491EFEAB21008532B3 /* YoutubeVideoViewModel.swift in Sources */,
 				E2A3D56F1EEC10AC00C28AAF /* YoutubeMainViewController.swift in Sources */,
-				E2A2FE051EF6A7FF00FE5DBC /* YoutubeSnippetModel.swift in Sources */,
-				E2A2FE061EF6A7FF00FE5DBC /* YoutubeThumbnailQualityModel.swift in Sources */,
 				E2A2FDEE1EEC6C1C00FE5DBC /* USERInfoModel.swift in Sources */,
 				E2A2FDF01EEC704900FE5DBC /* ImageLoad.swift in Sources */,
 				E25ED4931EF91F3D00070D7D /* VideosViewCell.swift in Sources */,
 				E27DD51B1ED41019004F9D53 /* BookStoreModel.swift in Sources */,
+				E240FFFF1F01046100E18A53 /* YoutubeCommentSnipperModel.swift in Sources */,
 				E26EDA141ED2D6EF00818052 /* UIColorExtension.swift in Sources */,
 				E2A2FE101EF6A98F00FE5DBC /* YoutubePageInfoModel.swift in Sources */,
 				E26EDA171ED2DEC100818052 /* TabEnumType.swift in Sources */,
@@ -634,13 +709,18 @@
 				E2A2FDFA1EF69CCE00FE5DBC /* YoutubeItemModel.swift in Sources */,
 				E20F5BB61ED07BED000B84B7 /* BaseViewController.swift in Sources */,
 				E230821B1EE71C6300674975 /* CustomButton.swift in Sources */,
+				E24000041F01046100E18A53 /* YoutubeThumbnailsModel.swift in Sources */,
+				E24000051F01046100E18A53 /* YoutubeTopLevelCommentModel.swift in Sources */,
 				E2506CE11F00269F00CAA0BF /* ArrayStringConversion.swift in Sources */,
 				E269C14B1EFFFBA7008532B3 /* YoutubeRatingEnumType.swift in Sources */,
 				E20F5BB81ED07C8F000B84B7 /* MarvelViewController.swift in Sources */,
+				E240FFFE1F01046100E18A53 /* YoutubeCommentModel.swift in Sources */,
 				E20F5BC01ED07D3B000B84B7 /* NavigationManager.swift in Sources */,
+				E240000A1F0104EE00E18A53 /* YoutubeCommentThreadsModel.swift in Sources */,
 				E2A2FE0C1EF6A88400FE5DBC /* YoutubeLikeModel.swift in Sources */,
 				E25ED4861EF8D2AD00070D7D /* YoutubeVideosModel.swift in Sources */,
-				E2A2FE071EF6A7FF00FE5DBC /* YoutubeThumbnailsModel.swift in Sources */,
+				E240FFE41F00E23800E18A53 /* YoutubeRelatedPlaylistsModel.swift in Sources */,
+				E24000081F01047700E18A53 /* YoutubeRepliesModel.swift in Sources */,
 				E2ECB92B1EE6A64F0026186A /* YoutubeViewLoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,7 +28,7 @@ class VideosViewCell: UITableViewCell {
             self.viewCountLabel.text = VideosCellModel.viewCount
             //先移除之前的prgrogress indicator
           //  if mostPopularVideosCellModel.progressIndicatorView.isDescendant(of: self.thunbsNailImgView) {
-                VideosCellModel.progressIndicatorView.removeFromSuperview()
+            VideosCellModel.progressIndicatorView.removeFromSuperview()
           //  }
             //在判斷是否要顯示圖案 或是繼續顯示prgrogress indicatord
             self.thumbsNailImgView.image = nil

@@ -42,7 +42,7 @@ class APIManager {
     }
     
     func requestVideoCategories(completion: @escaping(YoutubeVideoCategoriesModel)->Void){
-        let parameters = ["part":snippetPart,"regionCode" : USERINFO.regionCode!] as [String : AnyObject];
+        let parameters = ["part":snippetPart,"regionCode" : USERINFO.regionCode!] as [String : AnyObject]
         let URL = baseURL+APIURLEnumType.videoCategories.rawValue
         
         Alamofire.request(URL, method: .get, parameters: parameters, encoding: URLEncoding.default , headers: Auth_header).responseObject { (response:DataResponse<YoutubeVideoCategoriesModel>) in
@@ -55,7 +55,7 @@ class APIManager {
     }
     
     func requestMostPopularVideos(videoCategoryId videoCategoryIdGet:String, pageToken:String,completion: @escaping(YoutubeVideosModel)->Void){
-        let parameters = ["part":snippetPart+","+contentDetailsPart+","+statisticsPart,"chart":"mostPopular","regionCode" : USERINFO.regionCode!,"videoCategoryId":videoCategoryIdGet,"maxResults":defaultMaxResult,"pageToken":pageToken] as [String : AnyObject];
+        let parameters = ["part":snippetPart+","+contentDetailsPart+","+statisticsPart,"chart":"mostPopular","regionCode" : USERINFO.regionCode!,"videoCategoryId":videoCategoryIdGet,"maxResults":defaultMaxResult,"pageToken":pageToken] as [String : AnyObject]
         let URL = baseURL+APIURLEnumType.videos.rawValue
         Alamofire.request(URL, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: Auth_header).responseObject { (response:DataResponse<YoutubeVideosModel>) in
             if(response.error == nil){
@@ -67,7 +67,7 @@ class APIManager {
     }
     
     func requestMyLikeVideos(pageToken:String, completion: @escaping(YoutubeVideosModel)->Void){
-        let parameters = ["part":snippetPart+","+contentDetailsPart+","+statisticsPart,"regionCode" : USERINFO.regionCode!,"maxResults":defaultMaxResult,"myRating":"like","pageToken":pageToken] as [String : AnyObject];
+        let parameters = ["part":snippetPart+","+contentDetailsPart+","+statisticsPart,"regionCode" : USERINFO.regionCode!,"maxResults":defaultMaxResult,"myRating":"like","pageToken":pageToken] as [String : AnyObject]
         let URL = baseURL+APIURLEnumType.videos.rawValue
         Alamofire.request(URL, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: Auth_header).responseObject { (response:DataResponse<YoutubeVideosModel>) in
             if(response.error == nil){
@@ -80,7 +80,7 @@ class APIManager {
     
     func requestVideosByIDList(id idGet:[String]? = [""], completion: @escaping(YoutubeVideosModel)->Void){
         
-        let parameters = ["part":snippetPart+","+contentDetailsPart+","+statisticsPart ,"id" : ArrayStringConversion.arrayToString(array: idGet!)] as [String : AnyObject];
+        let parameters = ["part":snippetPart+","+contentDetailsPart+","+statisticsPart ,"id" : ArrayStringConversion.arrayToString(array: idGet!)] as [String : AnyObject]
         let URL = baseURL+APIURLEnumType.videos.rawValue
         Alamofire.request(URL, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: Auth_header).responseObject { (response:DataResponse<YoutubeVideosModel>) in
             if(response.error == nil){
@@ -112,6 +112,30 @@ class APIManager {
             }else{
                 completion(false)
                 self.showErrorMessage(APIName: "requestVideosRate", errorCode: response.response!.statusCode, errorDescription: (response.error?.localizedDescription)!)
+            }
+        }
+    }
+    
+    func requestChannels(id idGet:[String]? = [""], completion: @escaping(YoutubeChannelsModel)->Void){
+        let parameters = ["part":snippetPart+","+contentDetailsPart+","+statisticsPart ,"id":ArrayStringConversion.arrayToString(array: idGet!)] as [String : AnyObject]
+        let URL = baseURL+APIURLEnumType.channels.rawValue
+        Alamofire.request(URL, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: Auth_header).responseObject { (response:DataResponse<YoutubeChannelsModel>) in
+            if response.error == nil{
+                completion(response.result.value!)
+            }else{
+                 self.showErrorMessage(APIName: "requestChannels", errorCode: response.response!.statusCode, errorDescription: (response.error?.localizedDescription)!)
+            }
+        }
+    }
+    
+    func requestCommentsThreads(id idGet:String? = "",pageToken pageTokenGet:String? = "", completion: @escaping(YoutubeCommentThreadsModel)->Void){
+        let parameters = ["part":snippetPart+","+repliesPart, "maxResults":defaultMaxResult, "pageToken": pageTokenGet!, "videoId":idGet!] as [String : AnyObject]
+        let URL = baseURL+APIURLEnumType.commentThreads.rawValue
+        Alamofire.request(URL, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: Auth_header).responseObject { (response:DataResponse<YoutubeCommentThreadsModel>) in
+            if response.error == nil{
+                completion(response.result.value!)
+            }else{
+                 self.showErrorMessage(APIName: "requesrCommentsThreads", errorCode: response.response!.statusCode, errorDescription: (response.error?.localizedDescription)!)
             }
         }
     }

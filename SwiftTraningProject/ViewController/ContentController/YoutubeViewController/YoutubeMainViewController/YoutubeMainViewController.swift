@@ -12,8 +12,7 @@ import youtube_ios_player_helper
 import SwiftSpinner
 
 enum YoutubeMainViewControllerEvent:Int{
-    case YoutubeMainViewControllerEvent_ToPlayer=0 //轉到播放畫面
-    case YoutubeMainViewControllerEvent_ToVideo //轉到單一視頻畫面
+    case YoutubeMainViewControllerEvent_ToVideo = 0 //轉到單一視頻畫面
 }
 
 protocol YoutubeMainViewControllerDelegate {
@@ -61,9 +60,6 @@ class YoutubeMainViewController: BaseViewController,YTPlayerViewDelegate,Custome
         super.viewDidLoad()
         self.navigationController!.setNavigationBarHidden(false, animated: true)
         initLayout()
-//        GIDSignInBtn.reactive.controlEvents(.touchUpInside).observeValues { (UIButton) in
-//            self.delegate?.didYoutubeMainViewController(withObject: ["VideoID":"Ppv46_Cqc80"], event: .YoutubeMainViewControllerEvent_ToPlayer)
-//        }
     }
     override func viewDidAppear(_ animated: Bool) {
         //diable左上角的返回鍵功能
@@ -83,6 +79,9 @@ class YoutubeMainViewController: BaseViewController,YTPlayerViewDelegate,Custome
             self.navigationItem.rightBarButtonItem = barButtonItem
         }
         
+        alreadyRequestList = 0
+        //先清空原本cache的資料
+        self.youtubeMainViewModel?.cleanCache()
         initData() //向API請求相關資料
     }
     
@@ -252,7 +251,11 @@ class YoutubeMainViewController: BaseViewController,YTPlayerViewDelegate,Custome
                     }
                     //判斷是否需要loading後面的資料
                     if ((youtubeMainViewModel?.mostPopularVideosItemArray.count)! - indexPath.row) < 10 {
-                        requestMostPopularVideos(videoCategoryId: "", pageToken: (youtubeMainViewModel?.mostPopularVideosNextPageToken)!)
+                        if youtubeMainViewModel?.mostPopularVideosNextPageToken != "" {
+                            requestMostPopularVideos(videoCategoryId: "", pageToken: (youtubeMainViewModel?.mostPopularVideosNextPageToken)!)
+                        }else{
+                            tableView.tableFooterView?.isHidden = true
+                        }
                     }
                     return cell
                 case TableViewsEnumType.videoMyLiked.rawValue:
@@ -265,7 +268,11 @@ class YoutubeMainViewController: BaseViewController,YTPlayerViewDelegate,Custome
                         cell.VideosCellModel = youtubeMainViewModel?.createMyLikeVideosViewCellModel(forIndex: indexPath.row)
                     }
                     if ((youtubeMainViewModel?.myLikedVideosItemArray.count)! - indexPath.row) < 10 {
-                        requestMyLikedVideos(pageToken: (youtubeMainViewModel?.myLikedVideosNextPageToken)!)
+                        if youtubeMainViewModel?.myLikedVideosNextPageToken != "" {//如果為空白 代表沒有下一頁了
+                            requestMyLikedVideos(pageToken: (youtubeMainViewModel?.myLikedVideosNextPageToken)!)
+                        }else{
+                            tableView.tableFooterView?.isHidden = true
+                        }
                     }
                     return cell
                 default:

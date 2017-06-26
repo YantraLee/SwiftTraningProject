@@ -36,9 +36,17 @@ class CustomButton {
         button.tintColor = UIColor.white
         button.titleLabel?.font = UIFont.init(name: fontNameSet, size: fontSizeSet)
         
-         button.setTitle(content, for: .normal)
+        button.setTitle(content, for: .normal)
         
         return button
     }
     
+    class func makeViewContainerCustomButton(button:UIButton , content:String , fontSizeSet:CGFloat) -> UIButton{
+        button.backgroundColor = UIColor.clear
+        button.tintColor = UIColor.white
+        button.titleLabel?.font = UIFont.init(name: fontNameSet, size: fontSizeSet)
+        button.setTitle(content, for: .normal)
+        
+        return button
+    }
 }
