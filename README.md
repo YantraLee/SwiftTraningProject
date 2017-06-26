@@ -1,9 +1,9 @@
 # SwiftTraningProject
 The App with Youtube and Marvel API
 
-Entering into Project and command "Pod install" first.
+1.Entering into Project and command "Pod install" first.
 
-Assign for your own google Developer configuration file.
+2.Apply for your own google Developer configuration file.
 
 Here's where you can apply for it: 
 
